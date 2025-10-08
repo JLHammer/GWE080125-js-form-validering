@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Javascript - Form Validering</h1>
+    </header>
+
+    <main>
+        <form id="contactform" method="POST">
+            <fieldset>
+                <legend>Kontaktformular</legend>
+
+                <div class="form-group">
+                    <label for="fullname">For- og efternavn</label>
+                    <div class="input-wrapper">
+                        <input type="text" name="fullname" id="fullname" placeholder="Indtast dit fulde navn" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Emailadresse:</label>
+                    <div class="input-wrapper">
+                        <input type="email" name="email" id="email" placeholder="Indtast din emailadresse" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Besked:</label>
+                    <div class="input-wrapper">
+                        <textarea name="message" id="message" placeholder="Indtast din besked"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" id="validate">Send besked</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+/* Kontaktformular base */
+#contactform {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9fafb; /* lys baggrund */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* Sikrer ens padding på begge sider */
+  }
+  
+  /* Fieldset og legend */
+  #contactform fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #contactform legend {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1f2937;
+  }
+  
+  /* Form-grupper */
+  #contactform .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  #contactform label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  /* Input-wrapper indeholder input + fejlmeddelelse */
+  #contactform .input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Inputs og textarea styling */
+  #contactform input,
+  #contactform textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #111827;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Micro-interaction løft-effekt */
+  #contactform input:focus,
+  #contactform textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    outline: none;
+    transform: translateY(-2px); /* Løfter feltet lidt op */
+  }
+  
+  /* Textarea */
+  #contactform textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Fejl styling */
+  #contactform .error input,
+  #contactform .error textarea {
+    border-color: #ef4444;
+  }
+  
+  #contactform .error label {
+    color: #ef4444;
+  }
+  
+  /* Fejlmeddelelse */
+  .error-message {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Knap styling */
+  #contactform button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Knap hover-effekt + løft-effekt */
+  #contactform button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px); /* Løfter knappen lidt */
+  }
+  
+  /* Responsiv tilpasning */
+  @media (max-width: 480px) {
+    #contactform {
+      padding: 1.5rem;
+    }
+  
+    #contactform legend {
+      font-size: 1.6rem;
+    }
+  
+    #contactform button {
+      font-size: 1rem;
+    }
+  }
+  
